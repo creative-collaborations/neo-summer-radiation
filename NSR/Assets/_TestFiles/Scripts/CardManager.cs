@@ -26,7 +26,7 @@ public class CardManager : MonoBehaviour
             cards.Add(new RedCard());
         }
         
-        return cards;
+        return cards; // Cards are not shuffled yet, they go in the order of YBGR,YBGR, x10
 
     }
 
