@@ -16,6 +16,9 @@ public class PlayerController : MonoBehaviour {
     public GameObject dialogueBox;
     public Text dialogueText;
 
+    public int ultLevel; 
+    public int healthLevel = 1000;
+
     // Use this for initialization
     void Start () {
         inputs = Vector3.zero;
@@ -86,6 +89,18 @@ public class PlayerController : MonoBehaviour {
 
     }
 
+    public int getUltLevel(){
+        return this.ultLevel;
+    }
+    public int setUltLevel(int level){
+        this.ultLevel = level;
+    }
+    public int getHealthLevel(){
+        return this.healthLevel;
+    }
+    public int setHealthLevel(int level){
+        this.healthLevel = level;
+    }
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "collectible")
