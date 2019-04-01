@@ -92,13 +92,13 @@ public class PlayerController : MonoBehaviour {
     public int getUltLevel(){
         return this.ultLevel;
     }
-    public int setUltLevel(int level){
+    public void setUltLevel(int level){
         this.ultLevel = level;
     }
     public int getHealthLevel(){
         return this.healthLevel;
     }
-    public int setHealthLevel(int level){
+    public void setHealthLevel(int level){
         this.healthLevel = level;
     }
     void OnCollisionEnter(Collision collision)

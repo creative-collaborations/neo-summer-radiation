@@ -7,7 +7,7 @@ public class CardManager : MonoBehaviour
     public int COMBO_LIMIT = 8;
     public int DECK_LIMIT = 40;
     private int comboCount= 0;
-    private int ultLevel = 0;
+   
     private List<Card> deck;
 
 
@@ -55,7 +55,7 @@ public class CardManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(this.deck.Count ==0){
+        if(this.deck.Count ==0 ){
             this.deck = initializeDeck();
         }
     }
